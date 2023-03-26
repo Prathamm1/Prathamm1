@@ -1,43 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Digital Surveillance Company</title>
-    <link href="TDSC.css" rel="stylesheet" type="text/css" />
-    <link href="utils.css" rel="stylesheet" type="text/css" />
+<title>The Digital Surveillance Company</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+.navbar {
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+}
+.background {
+background: black;
+background-blend-mode: darken;
+background-size: cover;
+}
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+}
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img {
+width: 180px;
+border-radius: 50px;
+}
+.nav-list li {
+list-style: none;
+padding: 26px 30px;
+}
+.nav-list li a {
+text-decoration: none;
+color: white;
+}
+.nav-list li a:hover {
+color: grey;
+}
+.rightnav {
+width: 30%;
+text-align: right;
+}
+#search {
+padding: 5px;
+font-size: 17px;
+border: 2px solid grey;
+border-radius: 9px;
+}
+.firstsection {
+background-color: #131414d6;
+height: 400px;
+color: white;
+}
+.secondsection {
+background-color: #2fa5ff;
+height: 400px;
+}
+.box-main {
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+max-width: 80%;
+margin: auto;
+height: 80%;
+}
+.firsthalf {
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.secondhalf {
+width: 30%;
+}
+.secondhalf img {
+width: 70%;
+border: 4px solid white;
+border-radius: 150px;
+display: block;
+margin: auto;
+}
+.text-big {
+font-family: 'Piazzolla', serif;
+font-weight: bold;
+font-size: 35px;
+}
+.text-small {
+font-size: 18px;
+}
+.btn {
+padding: 8px 20px;
+margin: 7px 0;
+border: 2px solid white;
+border-radius: 8px;
+background: none;
+color: white;
+cursor: pointer;
+}
+.btn-sm {
+padding: 6px 10px;
+vertical-align: middle;
+}
+.section {
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 90%;
+margin: auto;
+}
+.section-Left {
+flex-direction: row-reverse;
+}
+.paras {
+padding: 0px 65px;
+}
+.thumbnail img {
+width: 250px;
+border: 2px solid black;
+border-radius: 26px;
+margin-top: 19px;
+}
+.center {
+text-align: center;
+}
+.text-footer {
+text-align: center;
+padding: 30px 0;
+font-family: 'Ubuntu', sans-serif;
+display: flex;
+justify-content: center;
+color: white;
+}
+</style>
 </head>
 <body>
-    <header>
-        <nav class="flex">
-            <div class="left flex items-center">
-                <img src="C:\Project\TDSC WEB\TDSC-729-300.png" width="100%"
-            </div>
+<nav class="navbar background">
+<ul class="nav-list">
+<li><a href="#web">About Us</a></li>
+<li><a href="#program">Contact Us</a></li>
+<li><a href="#course">Write Us</a></li>
+</ul>
+<div class="rightNav">
+<input type="text" name="search" id="search">
+<button class="btn btn-sm">Search</button>
+</div>
+</nav>
+<section class="firstsection">
+<div class="box-main">
+<div class="firstHalf">
+<h1 class="text-big" id="web">The Digital Surveillance Company</h1><br>
+<p class="text-small">
+Established in the year 2006 in California, 
+USA with a presence in India and the America’s, 
+The Digital Surveillance Company is Led by Professionals having in-depth knowledge of Electronic Security Systems and Technology Deployment Techniques. 
+Our Team has an eye for detailing to help develop tailor made solutions for our client’s. 
+We specialize in offering complete turnkey solutions in segments such as Law Enforcement, Public Vehicle Safety, Enterprise, Hospitality, Retail, Places of worship, Industries and Residential Communities.
+</p>
+</div>
+</div>
+</section>
+<section class="secondsection">
+<div class="box-main">
+<div class="firstHalf">
+<h1 class="text-big" id="program">
+What We Do
+</h1><br>
+<p class="text-small">
+Fire Alarm Systems <br>
+Information Technology Infrastructure<br>
+Electronic Security <br>
+</p>
+</div>
+</div>
+</section>
+<section class="firstsection">
+<div class="box-main">
+<div class="firstHalf">
+<h1 class="text-big" id="web">Some of our Technology Partners</h1><br>
+<p class="text-small">
 
-        </nav>
-    </header>
-    <div class="container textcolor">
-        <div class="centered">The Digital Surveillance Company </div>
-        <div class="centered1">Your Trusted Electronic Security, Surveillance and IT Systems Partner</div>
-        <div class="centered2">Established in the year 2006 in California, USA with a presence in India and the America’s, The Digital Surveillance Company is Led by Professionals having in-depth knowledge of Electronic Security Systems and Technology Deployment Techniques. Our Team has an eye for detailing to help develop tailor made solutions for our client’s.
-
-            We specialize in offering complete turnkey solutions in segments such as Law Enforcement, Public Vehicle Safety, Enterprise, Hospitality, Retail, Places of worship, Industries and Residential Communities.</div>
-        <img src="C:\Project\TDSC WEB\pexels-zhang-kaiyv-1168940.jpg" width="100%"
-    </div>
-    <div class="container" style="color:black"> What We Do </div>
-    <div class="container textcolor">
+    Samsung,
     
-        <ul class="centered4">
-            <ol>Networking</ol>
-            <ol>Fire Alarm Systems</ol>
-            <ol>Electronic Security</ol>
-            <ol>Information Technology Infrastructure</ol>
-            
-        </ul>
-        <img src="C:\Project\TDSC WEB\pexels-pixabay-159304.jpg " width="100%"
-
-<section>
+    Axxon,
     
+    Dahua Technology,
+    
+    eSSL,
+    
+    Matrix,
+    
+    Vivotek,
+    
+    Milestone,
+
+    Morley IAS,
+    
+    Cooper,
+    
+    System Sensor,
+    
+    Apollo,
+    
+    Texecom,
+    
+    Firelite Alarms,
+    
+    Securico,
+
+    Bosch,
+    
+    Honeywell,
+    
+    Electro Voice,
+    
+    Shure,
+    
+    Ahuja,
+    
+    Siemon,
+    
+    Reichle & De-Massari,
+    
+    Netgear,
+    
+    Ubiquiti,
+    
+    Le grand,
+    
+    Cisco,
+    
+    Molex.
+</p>
+</div>
+</div>
+</section>
+<footer class="background">
+<p class="text-footer">
+Copyright ©-All rights are reserved
+</p>
+</footer>
 </body>
 </html>
