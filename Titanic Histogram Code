@@ -1,0 +1,21 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+Titanic_data = sns.load_dataset('titanic')
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set the size of the figure
+plt.figure(figsize=(8, 6))
+
+# Plot the histogram
+sns.histplot(titanic_data['fare'], bins=30, kde=True, color='skyblue')
+
+# Set the title and labels
+plt.title('Distribution of Ticket Prices')
+plt.xlabel('Ticket Fare')
+plt.ylabel('Count')
+
+# Show the plot
+plt.show()
